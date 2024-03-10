@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tektur&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 5px black;
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    background-color: black;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.stars, .moon, .background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.stars{
+    transform: translateZ(-20px)scale(3);
+}
+
+.moon{
+    transform: translateZ(-15px)scale(2.5);
+    margin-top: -180px;
+}
+
+.background{
+    transform: translateZ(-10px)scale(2);
+    margin-top: -250px;
+}
+
+.foreground{
+    transform: translateZ(-5px)scale(1.6);
+    object-fit: cover;
+    margin-top: -120px;
+}
+
+.title_site {
+    font-size: 5rem;
+    color: white;
+    z-index: -1;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.trailPage{
+    padding: 3px;
+    background-image: url("https://wallpapers.com/images/hd4/the-earth-in-half-hqg0dwacfj0rr8el.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    padding: 30px ;
+}
+
+.addons{
+    margin-top: 40%;
+    padding: 0;
+    margin-block-end: 0;
+}
+
+.space{
+    font-size: 3rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Tektur', cursive;
+    padding: 0;
+}
+
+.detailings{
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 0 0 5px black;
+}
+@media only screen and (max-width: 600px) {
+    .detailings{
+        text-align: justify;
+    }
+}
+
+.earthClass{
+    padding: 3px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg");
+    background-size: cover;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.headingEarth{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageEarth{
+    text-shadow: 0 0 5px black;
+    max-width: 270px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .earthClass{
+        background-color: black;
+        color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .headingEarth{
+        margin-top: 50%;
+    }
+    .detailsPageEarth{
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+.moonClass{
+    padding: 3px;
+    background-image: url("https://www.rmg.co.uk/sites/default/files/styles/full_width_1440/public/Super%20Moon%20by%20Giorgia%20Hofer.jpg?itok=wwJLtflM");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.headingMoon{
+    margin-top: 30%;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageMoon{
+    text-align: justify;
+    padding: 0;
+    line-height: 1.5;
+    
+}
+
+.sunClass{
+    padding: 3px;
+    background-image: url("https://d.newsweek.com/en/full/2111507/solar-material.jpg?w=1600&h=1200&q=88&f=7b734813a928e810f3c2955a2ed3e53c");
+    background-size: cover;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.headingSun{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageSun{
+    text-shadow: 0 0 5px black;
+    max-width: 270px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .sunClass{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .headingSun{
+        margin-top: 50%;
+    }
+    .detailsPageSun{
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+.solarSystemClass{
+    padding: 3px;
+    background-image: url("https://cdn.hswstatic.com/gif/planet-order.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 30px;
+}
+
+.headingSolarSystem{
+    margin-top: 30%;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageSolarSystem{
+    max-width: 70%;
+    padding: 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .headingSolarSystem{
+        margin-top: 50%;
+    }
+    .detailsPageSolarSystem{
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+.blackHoleClass{
+    padding: 3px;
+    background-image: url("https://www.science.org/do/10.1126/science.abb1641/abs/Supermassive_blackhole_planet.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 30px;
+}
+
+.headingBlackHole{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageBlackHole{
+    max-width: 21%;
+    padding: 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .headingBlackHole{
+        margin-top: 50%;
+    }
+    .detailsPageBlackHole{
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+.galaxyClass{
+    padding: 3px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/3ugD8i73SE2V5YNb7YkkZA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.headingGalaxy{
+    margin-top: 30%;
+    margin-block-end: 0;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+    padding: 30px;
+}
+
+.detailsPageGalaxy{
+    text-align: center;
+    padding: 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .detailsPageGalaxy{
+        text-align: justify;
+    }
+}
+
+.footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins-SemiBold.ttf') format('truetype');
+  }
+  
+/* Navbar styles */
+.navbar-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.429);
+    color: #ffffff;
+    border-radius: 16px;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.site-title {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.signup {
+    background-color: #ffffff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.signup:hover {
+    background-color: #ffffff; /* Change color on hover */
+}
+.links a {
+    margin-right: 40px;
+    text-decoration: none;
+  }
+  
+  .links a:last-child {
+    margin-right: 0;
+  }
+  
+  .Foodie {
+    font-family: 'Poppins';
+    color: #1D1D1D;
+  }
+  
+  .link {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #000000;
+    position: relative;
+    /* Ensure that the pseudo-element is positioned relative to the link */
+    text-decoration: none;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    /* Adjust the distance of the underline from the text */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    background-color: #4D2C5E;
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth transition effect */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    /* Expand the underline to cover the width of the link */
+  }
+  #parallax-section {
+    height: 600px; /* Adjust the height as needed */
+    background-image: url('your-background-image.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This ensures the background remains fixed as the content scrolls */
+}
+
+.parallax-content {
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: white; /* Change text color to ensure readability */
+}
